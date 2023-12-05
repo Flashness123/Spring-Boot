@@ -1,0 +1,3 @@
+Genereller Vorgang bei einzelnen Aufgaben:
+1. Einrichtung:
+    Spring Initializr -> maven -> entpacken -> pom dependencies eintragen
