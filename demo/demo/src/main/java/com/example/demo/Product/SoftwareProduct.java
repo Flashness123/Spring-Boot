@@ -17,4 +17,14 @@ public class SoftwareProduct extends Product {
     public Integer getSize() {
         return size;
     }
+
+    @Override
+    public String toString() {
+        return "SoftwareProduct{" +
+                "url='" + url + '\'' +
+                ", size=" + size +
+                ", id=" + id +
+                ", description='" + description + '\'' +
+                '}';
+    }
 }

@@ -17,5 +17,16 @@ public class PersonPrivate extends Person {
     public String getSurname() {
         return surname;
     }
+
+    @Override
+    public String toString() {
+        return "PersonPrivate{" +
+                "name='" + name + '\'' +
+                ", surname='" + surname + '\'' +
+                ", adress='" + adress + '\'' +
+                ", plz=" + plz +
+                ", street='" + street + '\'' +
+                '}';
+    }
 }
 

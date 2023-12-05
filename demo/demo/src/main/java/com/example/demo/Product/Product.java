@@ -17,5 +17,13 @@ public abstract class Product {
     public String getDescription() {
         return description;
     }
+
+    @Override
+    public String toString() {
+        return "Product{" +
+                "id=" + id +
+                ", description='" + description + '\'' +
+                '}';
+    }
 }
 

@@ -24,4 +24,12 @@ public abstract class Person {
         return street;
     }
 
+    @Override
+    public String toString() {
+        return "Person{" +
+                "adress='" + adress + '\'' +
+                ", plz=" + plz +
+                ", street='" + street + '\'' +
+                '}';
+    }
 }

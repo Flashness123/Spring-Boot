@@ -18,4 +18,15 @@ public class PersonBusiness extends Person {
     public Integer getId() {
         return id;
     }
+
+    @Override
+    public String toString() {
+        return "PersonBusiness{" +
+                "businessName='" + businessName + '\'' +
+                ", id=" + id +
+                ", adress='" + adress + '\'' +
+                ", plz=" + plz +
+                ", street='" + street + '\'' +
+                '}';
+    }
 }
