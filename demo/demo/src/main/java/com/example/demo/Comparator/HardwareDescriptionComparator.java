@@ -8,6 +8,6 @@ public class HardwareDescriptionComparator implements Comparator<HardwareProduct
 
     @Override
     public int compare(HardwareProduct o1, HardwareProduct o2) {
-        return Integer.compare(o1.getDescription(), o2.getDescription());
+        return o1.getDescription().compareTo(o2.getDescription());
     }
 }

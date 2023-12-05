@@ -20,5 +20,8 @@ public class DemoApplication {
 		HardwareProduct product1 = new HardwareProduct(0, "DVD",15,"", Category.LAPTOP);
 		HardwareProduct product2 = new HardwareProduct(1, "SSD",150,"",Category.LAPTOP);
 		HardwareProduct product3 = new HardwareProduct(2, "PC",1500,"",Category.RECHNER);
+
+
+
 	}
 }
