@@ -1,14 +1,18 @@
 package com.example.demo;
 
+import com.example.demo.Bestellung.Bestellung;
+import com.example.demo.Bestellung.Customstate;
 import com.example.demo.Comparator.HardwareDescriptionComparator;
 import com.example.demo.Comparator.HardwareWeightComparator;
 import com.example.demo.Person.Person;
 import com.example.demo.Person.PersonPrivate;
 import com.example.demo.Product.Category;
 import com.example.demo.Product.HardwareProduct;
+import com.example.demo.Product.Product;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
@@ -44,5 +48,11 @@ public class DemoApplication {
 		HardwareWeightComparator hardwareWeightComparator = new HardwareWeightComparator();
 		Collections.sort(sortiment, hardwareWeightComparator.reversed()); //reversed
 		System.out.println("After Sorting : " + sortiment);
+
+		LocalDateTime timenow = LocalDateTime.now();
+
+		Bestellung bestellung = new Bestellung(person1, product1, timenow, 20, Customstate.BESTELLT);
+		System.out.println(bestellung);
+
 	}
 }
