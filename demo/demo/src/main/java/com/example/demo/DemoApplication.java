@@ -1,4 +1,6 @@
-//TODO:Aufgaben erledigt: 1,2,3,4
+//TODO:Aufgaben erledigt: 1,2,3,4,5
+// POST und DELETE in CRUD?
+// Wozu commandlinerunner?
 
 package com.example.demo;
 
@@ -88,6 +90,10 @@ public class DemoApplication {
 			for (Person p : personRepository.getPeopleById(id)) {
 				log.info(p.toString());
 			}
+//			log.info("Person found with getPeopleById(): "); POST und DELETE
+//			log.info("Person found with getPeopleById(): ");
+//			log.info("Person found with getPeopleById(): ");
+
 
 
 
