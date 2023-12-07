@@ -1,9 +1,11 @@
 package com.example.demo.Person;
 
+import com.example.demo.Repository.PersonRepository;
 import jakarta.persistence.Entity;
 
 @Entity
 public class PersonPrivate extends Person {
+    public PersonPrivate(){}
 
     public PersonPrivate(String adress, Integer plz, String street, String name, String surname) {
         super(adress, plz, street);

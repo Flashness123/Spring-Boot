@@ -7,6 +7,7 @@ import jakarta.persistence.Id;
 
 @Entity
 public abstract class Person {
+    public Person(){}
     public Person(String adress, Integer plz, String street) {
         this.adress = adress;
         this.plz = plz;

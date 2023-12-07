@@ -11,4 +11,8 @@ import java.util.List;
 public interface PersonRepository extends CrudRepository<Person, Long> {
     @Query("SELECT p FROM Person p")
     List<Person> getAllPeople();
+
+    @Query("SELECT p FROM Person p WHERE p.id = ?1")
+    List<Person> getPeopleById(Long id);
+
 }
