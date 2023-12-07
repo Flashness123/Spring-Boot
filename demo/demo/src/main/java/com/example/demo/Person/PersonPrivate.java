@@ -1,5 +1,8 @@
 package com.example.demo.Person;
 
+import jakarta.persistence.Entity;
+
+@Entity
 public class PersonPrivate extends Person {
 
     public PersonPrivate(String adress, Integer plz, String street, String name, String surname) {
@@ -29,4 +32,3 @@ public class PersonPrivate extends Person {
                 '}';
     }
 }
-
